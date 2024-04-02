@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Timerbaev_41"
         mc:Ignorable="d"
-        Title="Timerbaev_41" Height="450" Width="800" Icon="Images/icon.ico" MinHeight="450" MinWidth="800" FontFamily="Comic Sans MS">
+        Title="Timerbaev_41" Height="450" Width="800" Icon="Images/icon.ico" MinHeight="600" MinWidth="980" FontFamily="Comic Sans MS">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="75"></RowDefinition>

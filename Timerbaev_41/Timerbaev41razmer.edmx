@@ -14,7 +14,7 @@
           <Property Name="OrderDeliveryDate" Type="date" Nullable="false" />
           <Property Name="OrderPickupPoint" Type="int" Nullable="false" />
           <Property Name="OrderClient" Type="int" />
-          <Property Name="OrderReceiveCode" Type="nchar" MaxLength="10" />
+          <Property Name="OrderReceiveCode" Type="int" />
           <Property Name="OrderStatus" Type="nvarchar(max)" Nullable="false" />
         </EntityType>
         <EntityType Name="OrderProduct">
@@ -185,7 +185,7 @@
           <Property Name="OrderDeliveryDate" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="OrderPickupPoint" Type="Int32" Nullable="false" />
           <Property Name="OrderClient" Type="Int32" />
-          <Property Name="OrderReceiveCode" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="OrderReceiveCode" Type="Int32" />
           <Property Name="OrderStatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="OrderProduct" Relationship="Self.FK__OrderProd__Order__2E1BDC42" FromRole="Order" ToRole="OrderProduct" />
           <NavigationProperty Name="PickupPoint" Relationship="Self.FK_Order_PickupPoint" FromRole="Order" ToRole="PickupPoint" />

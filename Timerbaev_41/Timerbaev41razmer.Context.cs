@@ -15,20 +15,23 @@ namespace Timerbaev_41
     
     public partial class Timerbaev_41razmerEntities : DbContext
     {
+        public Timerbaev_41razmerEntities()
+            : base("name=Timerbaev_41razmerEntities")
+        {
+        }
+
         private static Timerbaev_41razmerEntities _context;
 
         public static Timerbaev_41razmerEntities GetContext()
         {
             if (_context == null)
+            {
                 _context = new Timerbaev_41razmerEntities();
+            }
+
             return _context;
         }
 
-        public Timerbaev_41razmerEntities()
-            : base("name=Timerbaev_41razmerEntities")
-        {
-        }
-    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

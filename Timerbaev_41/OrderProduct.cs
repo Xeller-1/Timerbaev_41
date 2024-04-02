@@ -16,7 +16,7 @@ namespace Timerbaev_41
     {
         public int OrderID { get; set; }
         public string ProductArticleNumber { get; set; }
-        public Nullable<int> Amount { get; set; }
+        public int Amount { get; set; }
     
         public virtual Order Order { get; set; }
         public virtual Product Product { get; set; }

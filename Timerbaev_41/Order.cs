@@ -25,7 +25,7 @@ namespace Timerbaev_41
         public System.DateTime OrderDeliveryDate { get; set; }
         public int OrderPickupPoint { get; set; }
         public Nullable<int> OrderClient { get; set; }
-        public string OrderReceiveCode { get; set; }
+        public Nullable<int> OrderReceiveCode { get; set; }
         public string OrderStatus { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
